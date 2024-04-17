@@ -1,0 +1,57 @@
+/* styles/SportsItem.css */
+
+.sports-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    /* Adjust width as needed */
+    width: calc(100% / 3);
+    /* Each item occupies one-third of the container width */
+    padding: 0 15px;
+    /* Add some horizontal padding */
+    box-sizing: border-box;
+}
+
+.sports-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.sports-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+
+
+}
+
+.sports-item button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sports-item button:hover {
+    background-color: #0056b3;
+}
+
+.sports-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.shop {
+    text-align: center;
+    margin-bottom: 15px;
+}

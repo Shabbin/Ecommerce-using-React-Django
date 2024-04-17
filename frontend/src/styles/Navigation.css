@@ -1,0 +1,70 @@
+/* styles/Navigation.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.name {
+    margin-left: 50px;
+
+}
+
+.navbar {
+    background-color: #f3a033;
+
+    color: #ffffff;
+
+    width: 100%;
+
+    display: flex;
+    margin: 0;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-links {
+    list-style: none;
+    margin-left: 500px;
+
+
+}
+
+.navbar-links>* {
+    margin-right: 1rem;
+    /* Add spacing between list items */
+    color: #fff;
+    /* Set link color */
+    text-decoration: none;
+    /* Remove underline from links */
+    padding: 0.5rem 1rem;
+    /* Add padding to links */
+    border-radius: 0.25rem;
+    /* Add border radius */
+    transition: background-color 0.3s ease;
+    /* Add transition effect */
+}
+
+/* Add some hover effects to links */
+.navbar-links>*:hover {
+    background-color: #555;
+    /* Change background color on hover */
+}
+
+/* Set active link background color */
+.navbar-links>.active {
+    background-color: #ffa500;
+}
