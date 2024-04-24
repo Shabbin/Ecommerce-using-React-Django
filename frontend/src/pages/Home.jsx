@@ -19,10 +19,7 @@ function Shop() {
         // Add more items as needed
     ];
 
-    const addToCart = (id) => {
-        // Implement your add to cart functionality here
-        alert(`Added item with id ${id} to cart`);
-    };
+
 
     return (
         <div className="shop-page">
@@ -31,7 +28,7 @@ function Shop() {
             <h2 className="shop">Shop</h2>
             <div className="sports-items">
                 {sportsItems.map((item) => (
-                    <SportsItem key={item.id} image={item.image} item={item} addToCart={addToCart} />
+                    <SportsItem key={item.id} image={item.image} item={item} />
                 ))}
             </div>
         </div>

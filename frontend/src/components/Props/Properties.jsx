@@ -1,7 +1,10 @@
 import React from 'react';
-import './Properties.css'
-const Properties = ({ data }) => {
-    const { img, name, category, seller, price, ratings, shipping } = data
+import './Properties.css';
+
+const Properties = (data) => {
+    const { handleAddToCart } = data;
+    const { img, name, category, seller, price, ratings } = data.data;
+
     return (
         <div className='product'>
             <img src={img} alt="" />
@@ -13,9 +16,10 @@ const Properties = ({ data }) => {
                 <p><small>Ratings : {ratings} starts</small></p>
             </div>
 
-            <button className='btn-cart'>
+            <button onClick={() => handleAddToCart(data.data)} className='btn-cart' >
                 <p>Add to Cart</p>
             </button>
+
         </div>
     );
 };
